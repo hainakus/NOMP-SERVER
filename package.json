@@ -2,9 +2,10 @@
   "name": "erg_pool",
   "version": "1.0.0",
   "description": "ERGO POOL",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/hainakus/NOMP-SERVER/issues"
   },
-  "homepage": "https://github.com/hainakus/NOMP-SERVER#readme"
+  "homepage": "https://github.com/hainakus/NOMP-SERVER#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "async": "^3.2.3",
+    "colors": "*",
+    "dateformat": "^5.0.3",
+    "redis": "^4.0.4",
+    "stratum-pool": "git+https://github.com/hainakus/cryptocurrency-stratum-pool.git",
+    "twilio": "^3.75.1"
+  },
+  "type": "module"
 }
