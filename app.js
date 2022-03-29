@@ -1,11 +1,11 @@
 
-import PoolLogger from './utils/logUtil.js'
+import * as PoolLogger from './utils/logUtil.js'
 import Stratum from "stratum-pool";
 import stats from "./stats.js";
 import twilio from "twilio";
 
 
-const logger = new PoolLogger({
+const logger = new PoolLogger.PoolLogger({
     "logLevel": 1
 });
 
@@ -145,7 +145,7 @@ const pool = Stratum.createPool(
 );
 
 pool.on('share', function(isValidShare, isValidBlock, data){
-    const logger = new PoolLogger({
+    const logger = new PoolLogger.PoolLogger({
         "logLevel": 1,
     });
     var logSystem = 'Pool';

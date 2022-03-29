@@ -2,7 +2,7 @@ import * as redis from "redis";
 
 
 
-import algos from 'stratum-pool/lib/algoProperties.js';
+
 import async from "async";
 
 // redis callback Ready check failed bypass trick

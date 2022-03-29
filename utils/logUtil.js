@@ -22,7 +22,7 @@ var severityValues = {
 };
 
 
-var PoolLogger = function (configuration) {
+export const PoolLogger = function (configuration) {
 
 
     var logLevelInt = severityValues[configuration.logLevel];
@@ -74,4 +74,4 @@ var PoolLogger = function (configuration) {
     });
 };
 
-export default PoolLogger;
+
